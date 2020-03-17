@@ -3,7 +3,7 @@
 <input type="text" placeholder="Search for keywords.." style="  list-style-type: none;padding: 0; margin: 0; width:60%;">
         {% for post in posts %}
         <br/><br/>
-         <div style="background-color: #d488f7;color: #fff; border-radius: 5px;padding:10px;">
+         <div style="background-color: #d488f7;color: #fff; border-radius: 5px;padding:10px;margin: 20px 50px 20px 50px; ">
             <p>published: {{ post.published_date }}</p>
             <h2><a href="">{{ post.title }}</a></h2>
             <p> {{ post.text|linebreaksbr }}</p>
