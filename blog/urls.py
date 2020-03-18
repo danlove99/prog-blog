@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+path('/oldest', views.oldest, name='oldest'),
 path('/python', views.python, name='python'),
 path('/sqlnosql', views.sqlnosql, name='sqlnosql'),
 path('/web', views.webdevelpment, name='web'),

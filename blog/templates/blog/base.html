@@ -31,9 +31,10 @@
     <a href="https://github.com/danlove99" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" style="height:100px;width:110px;"></a>
         </div>
     <br/>
-    <div class="container" style="background-color: #8332a8; text-align: left;border-radius: 5px;">
+    <div class="container" style="background-color: #8332a8; border-radius: 5px;">
         <br/>
-        <div class="dropdown" style="margin-left: 50px;">
+        <div class="row">
+        <div class="dropdown" style="margin-left: 50px;text-align: left;">
   <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Filter
   </button>
@@ -43,6 +44,19 @@
     <a class="dropdown-item" href="{% url 'web' %}">HTML CSS JavaScript</a>
       <a class="dropdown-item" href="{% url 'scripting' %}">Scripting</a>
   </div>
+</div>
+
+        <div class="dropdown" style="margin-right: 50px;margin-left:830px;text-align: right;">
+  <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Date-Added
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{% url 'post_list' %}">Newest</a>
+    <a class="dropdown-item" href="{% url 'oldest' %}">Oldest</a>
+
+
+  </div>
+            </div>
 </div>
         {% block content %}
         {% endblock %}
