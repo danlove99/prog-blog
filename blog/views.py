@@ -3,7 +3,9 @@ from django.utils import timezone
 from .models import Post
 
 def home(request):
-    return render(request, 'blog/home.html', {})
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+
+    return render(request, 'blog/home.html', {'post0': posts[0], 'post1': posts[1], 'post2': posts[2]})
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
