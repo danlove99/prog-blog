@@ -65,31 +65,9 @@
 
     <div class="container" id="mainContainer" >
         <br/>
-        <div class="row">
-        <div class="dropdown" style="margin-left: 50px;text-align: left;">
-  <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Filter
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="{% url 'python' %}">Python</a>
-    <a class="dropdown-item" href="{% url 'sqlnosql' %}">SQL NoSQL</a>
-    <a class="dropdown-item" href="{% url 'web' %}">HTML CSS JavaScript</a>
-      <a class="dropdown-item" href="{% url 'scripting' %}">Scripting</a>
-  </div>
-</div>
-
-        <div class="dropdown" style="margin-right: 50px;margin-left:830px;text-align: right;">
-  <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Date-Added
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="{% url 'post_list' %}">Newest</a>
-    <a class="dropdown-item" href="{% url 'oldest' %}">Oldest</a>
 
 
-  </div>
-            </div>
-</div>
+
         {% block content %}
         {% endblock %}
         <br/>

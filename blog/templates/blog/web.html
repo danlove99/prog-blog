@@ -4,9 +4,9 @@
         {% for post in posts %}
         <br/><br/>
          <div style="background-color: #d488f7;color: #fff; border-radius: 5px;padding:10px;margin: 20px 50px 20px 50px; text-align:center;">
-            <p>published: {{ post.published_date }}</p>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p> {{ post.text|linebreaksbr }}</p>
+            <p style="word-wrap: break-word;">published: {{ post.published_date }}</p>
+            <h2 style="word-wrap: break-word;"><a href="">{{ post.title }}</a></h2>
+            <p style="word-wrap: break-word;"> {{ post.text|linebreaksbr }}</p>
         </div>
         {% endfor %}
 {% endblock %}
