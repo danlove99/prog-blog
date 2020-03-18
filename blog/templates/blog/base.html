@@ -25,41 +25,41 @@
     </style>
 </head>
 <body>
-    <br/><h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3">Dan's Progress Blog</h3><br/>
+<br/><h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'post_list' %}" style="color: #fff; text-decoration: none;">Dan's Progress Blog</a></h3><br/>
 
     <div style="text-align:center;">
     <a href="https://github.com/danlove99" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" style="height:100px;width:110px;"></a>
         </div>
     <br/>
-    <div class="container" style="background-color: #8332a8; text-align: center;border-radius: 5px;">
+    <div class="container" style="background-color: #8332a8; text-align: left;border-radius: 5px;">
         <br/>
+        <div class="dropdown" style="margin-left: 50px;">
+  <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filter
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{% url 'python' %}">Python</a>
+    <a class="dropdown-item" href="{% url 'sqlnosql' %}">SQL NoSQL</a>
+    <a class="dropdown-item" href="{% url 'web' %}">HTML CSS JavaScript</a>
+      <a class="dropdown-item" href="{% url 'scripting' %}">Scripting</a>
+  </div>
+</div>
         {% block content %}
         {% endblock %}
         <br/>
 
     </div>
 
-<script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
+<footer class="page-footer font-small" style="background-color: #d488f7;">
+
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright <br/>
+    <a href="https://github.com/danlove99"> Github </a>
+  </div>
+
+
+</footer>
 
 </body>
 </html>
