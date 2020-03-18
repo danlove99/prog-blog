@@ -1,7 +1,8 @@
 {% extends 'blog/homebase.html' %}
+{% load static %}
 {% block content %}
 <h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> recent projects </h3>
-<br/>
+<br/><br/>
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
@@ -34,7 +35,10 @@
     </div>
   </div>
 </div>
+<br/>
+<!-- recent blogs -->
 <h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> recent blogs </h3>
+<br/><br/>
 <div class="row" style="text-align: center;">
   <div class="col-md-4">
 <div class="card" style="width: 100%; height: 400px;">
@@ -47,7 +51,7 @@
 </div>
   </div>
       <div class="col-md-4">
-<div class="card" style="width: 100% height: 400px;">
+<div class="card" style="width: 100%; height: 400px;">
   <div class="card-body">
     <h5 class="card-title">{{ post1.title }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{ post1.published_date }}</h6>
@@ -72,15 +76,18 @@
 
 <!-- about me -->
 <h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> About </h3>
+
 <div style="text-align: center">
-<img src="https://regmedia.co.uk/2019/02/06/shutterstock_429792736.jpg?x=442&y=293&crop=1" alt="Lights" style="width:200px; height:200px;border-radius: 100px;">
+<img src="{% static '/blog/me.jpg' %}" alt="me" style="width:200px; height:200px;border-radius: 100px;">
 </div>
-<div class="card" style="width: 100%; text-align: center;">
+<br/><br/>
+<div class="card" style="width: 60%; text-align: center; margin-left: 19%;">
   <div class="card-body">
 
-    <p class="card-text">Hi, I'm Dan. I'm a hobbiest developer and professional computer technician that's passionate about DL/ML models implemented into web applications. I also strongly agree with the views of the free software Foundation and am a devoted Linux user. My programming language of choice is Python when writing deep learning models implemented into either the Django framework or Flask framework depending on the complexity of the web application. I also love to experiment with both microcontrollers and microprocessors, you can see some of my recent and current robotics projects on the *showcase* section of this site along with some recent Python projects. The blog section consists of both posts keeping up with my learning progress and educational posts about topics that I'm already knowledgeable about. I hope to one day become a professional developer but I am very much doing this for personal satisfaction at the moment rather than for any financial gain. When I'm not working on any projects I like to contribute to the open source community on Github. Thanks for viewing my about me and I hope you enjoy my site.</p>
+    <p class="card-text">Hi, I'm Dan <br/> I'm a hobbiest developer and professional computer technician that's passionate about DL/ML models implemented into web applications. I also strongly agree with the views of the free software Foundation and am a devoted Linux user. My programming language of choice is Python when writing deep learning models implemented into either the Django framework or Flask framework depending on the complexity of the web application. I also love to experiment with both microcontrollers and microprocessors, you can see some of my recent and current robotics projects on the *showcase* section of this site along with some recent Python projects. The blog section consists of both posts keeping up with my learning progress and educational posts about topics that I'm already knowledgeable about. I hope to one day become a professional developer but I am very much doing this for personal satisfaction at the moment rather than for any financial gain. When I'm not working on any projects I like to contribute to the open source community on Github. Thanks for viewing my about me and I hope you enjoy my site.</p>
 
   </div>
 </div>
+
 
 {% endblock %}
