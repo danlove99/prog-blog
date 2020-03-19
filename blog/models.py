@@ -2,6 +2,11 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+class Project(models.Model):
+    img = models.ImageField(null=True, blank=True, upload_to="projects/")
+    description = models.CharField(max_length=300)
+    link = models.CharField(max_length=200)
+    published_date = models.DateTimeField(blank=True, null=True)
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

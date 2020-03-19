@@ -1,11 +1,20 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
+from .models import Post, Project
 
 def home(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    return render(request, 'blog/home.html', {'post0': posts[0], 'post1': posts[1], 'post2': posts[2],
+                                              'project0': projects[0], 'project1': projects[1],
+                                              'project2': projects[2]})
 
-    return render(request, 'blog/home.html', {'post0': posts[0], 'post1': posts[1], 'post2': posts[2]})
+
+def projects(request):
+    projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    return render(request, 'blog/projects.html', {'project0': projects[0], 'project1': projects[1],
+                                                  'project2': projects[2]})
+
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')

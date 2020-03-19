@@ -122,3 +122,6 @@ ALLOWED_HOSTS = ['127.0.0.1', '.appspot.com', '192.168.1.174']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = '/home/dan/Django/Django/progblog/projects'
+MEDIA_URL = '/projects/'
