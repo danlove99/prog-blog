@@ -29,17 +29,25 @@
 
      @media (max-width: @screen-xs) {
     *{font-size: 10px;}
+    #aboutcard {
+    width:100%;
+    }
 }
 
 @media (max-width: @screen-sm) {
-    *{font-size: 14px;}
+    *{font-size: 14px;word-wrap: break-word;}
+    #aboutcard {
+    width:100%;
+    }
+    #heading {
+    font-size: 30px;}
 }
 
 
     </style>
 </head>
 <body>
-<br/><br/><h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Love Programming</a></h3><br/>
+<br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Love Programming</a></h3><br/>
 
 
 
@@ -64,8 +72,8 @@
 </nav>
 
 
-<br/>
-    <div class="container" id="mainContainer"  >
+
+    <div class="container-fluidr" id="mainContainer"  >
 
        <br/>
 
@@ -75,8 +83,7 @@
 
     </div>
 
-<br/>
-<footer class="page-footer font-small" style="background-color: #8332a8;color: #fff;">
+<footer class="page-footer font-small" style="background-color: #d488f7;color: #fff;">
 
  <div style="text-align:center;">
     <a href="https://github.com/danlove99" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" style="height:100px;width:110px;"></a>
