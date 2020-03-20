@@ -13,7 +13,8 @@ def home(request):
 def projects(request):
     projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, 'blog/projects.html', {'project0': projects[0], 'project1': projects[1],
-                                                  'project2': projects[2]})
+                                                  'project2': projects[2], 'project3': projects[3], 'project4': projects[4],
+                                                  'project5': projects[5]})
 
 
 def post_list(request):

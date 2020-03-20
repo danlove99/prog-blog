@@ -58,17 +58,16 @@
       <a class="nav-item nav-link" href="{% url 'post_list' %}" style="color:#000">Blog</a>
     </li>
     <li class="nav-item" style="margin-right:10px;">
-      <a class="nav-item nav-link" href="#" style="color:#000">Projects</a>
+      <a class="nav-item nav-link" href="{% url 'projects' %}" style="color:#000">Projects</a>
     </li>
   </ul>
 </nav>
 
+
 <br/>
+    <div class="container" id="mainContainer"  >
 
-    <div class="container" id="mainContainer" >
-        <br/>
-
-
+       <br/>
 
         {% block content %}
         {% endblock %}
@@ -76,7 +75,7 @@
 
     </div>
 
-
+<br/>
 <footer class="page-footer font-small" style="background-color: #8332a8;color: #fff;">
 
  <div style="text-align:center;">
