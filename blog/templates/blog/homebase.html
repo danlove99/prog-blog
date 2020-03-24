@@ -47,13 +47,15 @@
     </style>
 </head>
 <body>
+
+
+
+
+
+
 <br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Love Programming</a></h3><br/>
 
-
-
-
-
-
+    <div class="container-fluidr" id="mainContainer"  style="background: url(https://cdn.imgbin.com/7/9/13/imgbin-purple-gradient-U8shgN9LZrF2xbXJaESNqLWWF.jpg); background-repeat: no-repeat;background-size: 100% 100%;" >
 
 
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
@@ -73,17 +75,15 @@
 
 
 
-    <div class="container-fluidr" id="mainContainer"  >
-
        <br/>
 
         {% block content %}
         {% endblock %}
         <br/>
 
-    </div>
 
-<footer class="page-footer font-small" style="background-color: #d488f7;color: #fff;">
+
+<footer class="page-footer font-small" style="background-color: #d488f7;color: #fff;opacity: 0.5;">
 
  <div style="text-align:center;">
     <a href="https://github.com/danlove99" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" style="height:100px;width:110px;"></a>
@@ -94,6 +94,6 @@
 
 
 </footer>
-
+</div>
 </body>
 </html>
