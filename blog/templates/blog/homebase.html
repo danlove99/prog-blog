@@ -27,20 +27,18 @@
         border-radius: 5px;
         }
 
-     @media (max-width: @screen-xs) {
-    *{font-size: 10px;}
+     @media (max-width: 768px) and (max-width: 991px) {
+    *{font-size: 15px;}
     #aboutcard {
     width:100%;
+    height: auto;
+    }
+    #heading {
+    font-size: 30px;
     }
 }
 
-@media (max-width: @screen-sm) {
-    *{font-size: 14px;word-wrap: break-word;}
-    #aboutcard {
-    width:100%;
-    }
-    #heading {
-    font-size: 30px;}
+
 }
 
 
@@ -53,9 +51,9 @@
 
 
 
-<br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Love Programming</a></h3><br/>
+<br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Loves Blog</a></h3><br/>
 
-    <div class="container-fluidr" id="mainContainer"  style="background: url(https://designroast.org/wp-content/uploads/2014/02/pattern-thepatternlibrary.png); background-repeat: repeat;background-size: 100% 100%;" >
+    <div class="container-fluidr" id="mainContainer"   >
 
 
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
@@ -67,9 +65,11 @@
     <li class="nav-item" style="margin-right:10px;">
       <a class="nav-item nav-link" href="{% url 'post_list' %}" style="color:#000">Blog</a>
     </li>
+      <!--
     <li class="nav-item" style="margin-right:10px;">
       <a class="nav-item nav-link" href="{% url 'projects' %}" style="color:#000">Projects</a>
     </li>
+    -->
   </ul>
 </nav>
 
