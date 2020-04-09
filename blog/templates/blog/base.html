@@ -31,7 +31,15 @@
     *{font-size: 10px;}
 }
 
-@media (max-width: @screen-sm) {
+@@media (max-width: 768px) and (max-width: 991px) {
+    *{font-size: 15px;}
+    #aboutcard {
+    width:100%;
+    height: auto;
+    }
+    #heading {
+    font-size: 30px;
+    }media (max-width: @screen-sm) {
     *{font-size: 14px;}
 }
 
@@ -66,7 +74,7 @@
     <div class="container-fluid" id="mainContainer" >
         <br/>
         <div class="row">
-        <div class="dropdown" style="margin-left: 50px;text-align: left;">
+        <div class="dropdown" style="margin-left: 50px;text-align: left;" id="date_filter">
   <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Filter
   </button>
@@ -78,7 +86,7 @@
   </div>
 </div>
 
-        <div class="dropdown" style="margin-left:980px;text-align: right;">
+        <div class="dropdown" style="margin-left:75%;text-align: right;">
   <button class="btn btn-secondary dropdown-toggle" style="background-color:#d488f7; color:#fff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Date-Added
   </button>
