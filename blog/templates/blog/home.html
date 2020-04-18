@@ -1,117 +1,128 @@
 {% extends 'blog/homebase.html' %}
 {% load static %}
 {% block content %}
-<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> recent projects </h3>
+<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3">
+    recent projects </h3>
 <br/><br/>
 <div class="row">
-  <div class="col-md-4">
-      <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
-  <div class="card-body" >
-    <div class="thumbnail">
-      <a href="{{ project0.link }}">
-        <img src="{{ project0.img }}" alt="Lights" style="width:100%;border-radius: 8px;height:200px;">
-      </a>
-        <div class="caption">
-          <p style="color:#000">{{ project0.description }}</p>
-          <!--<p><a href="{{ project0.link }}">Project on Github</a></p>-->
-        </div>
-
-    </div>
-  </div>
-      </div>
-  </div>
-  <div class="col-md-4">
+    <div class="col-md-4">
         <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
-  <div class="card-body" >
-    <div class="thumbnail">
-      <a href="{{ project1.link }}">
-        <img src="{{ project1.img }}" alt="Lights" style="width:100%;border-radius: 8px;height=100px;">
-        </a>
-        <div class="caption">
-          <p style="color:#000">{{ project1.description }}</p>
+            <div class="card-body">
+                <div class="thumbnail">
+                    <a href="{{ project0.link }}">
+                        <img src="{{ project0.img }}" alt="Lights" style="width:100%;border-radius: 8px;height:200px;">
+                    </a>
+                    <div class="caption">
+                        <p style="color:#000">{{ project0.description }}</p>
+                        <!--<p><a href="{{ project0.link }}">Project on Github</a></p>-->
+                    </div>
 
+                </div>
+            </div>
         </div>
-
     </div>
-  </div>
-        </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
-  <div class="card-body" >
-    <!-- <div class="thumbnail"> -->
-      <a href="{{ project2.link }}">
-        <img src="{{ project2.img }}"  style="width:100%;border-radius: 8px;height=100px;">
-        </a>
-        <div class="caption">
-          <p style="color:#000">{{ project2.description }}</p>
+    <div class="col-md-4">
+        <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
+            <div class="card-body">
+                <div class="thumbnail">
+                    <a href="{{ project1.link }}">
+                        <img src="{{ project1.img }}" alt="Lights" style="width:100%;border-radius: 8px;height=100px;">
+                    </a>
+                    <div class="caption">
+                        <p style="color:#000">{{ project1.description }}</p>
 
-        </div>
+                    </div>
 
-    <!--</div>-->
-  </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
+            <div class="card-body">
+                <!-- <div class="thumbnail"> -->
+                <a href="{{ project2.link }}">
+                    <img src="{{ project2.img }}" style="width:100%;border-radius: 8px;height=100px;">
+                </a>
+                <div class="caption">
+                    <p style="color:#000">{{ project2.description }}</p>
+
+                </div>
+
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
 
 </div>
 <br/>
 <!-- recent blogs -->
-<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> recent blogs </h3>
+<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3">
+    recent blogs </h3>
 <br/><br/>
 <div class="row" style="text-align: center;">
-  <div class="col-md-4">
-<div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
-  <div class="card-body" >
-    <h5 class="card-title">{{ post0.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ post0.published_date }}</h6>
-    <p class="card-text">{{ post0.text|truncatewords:50}}</p>
-    <a href="{% url 'post_list' %}" class="card-link">Blog</a>
-  </div>
-</div>
-  </div>
-      <div class="col-md-4">
-<div class="card" style="width: 100%; height: 400px;  margin-bottom: 10px;">
-  <div class="card-body">
-    <h5 class="card-title">{{ post1.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ post1.published_date }}</h6>
-    <p class="card-text">{{ post1.text|truncatewords:50}}</p>
-    <a href="{% url 'post_list' %}" class="card-link">Blog</a>
-  </div>
-</div>
-  </div>
-      <div class="col-md-4">
-<div class="card" style="width: 100%; height: 400px;  margin-bottom: 10px;">
-  <div class="card-body">
-    <h5 class="card-title">{{ post2.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ post2.published_date }}</h6>
-    <p class="card-text">{{ post2.text|truncatewords:50}}</p>
-    <a href="{% url 'post_list' %}" class="card-link">Blog</a>
+    <div class="col-md-4">
+        <div class="card" style="width: 100%; height: 400px; margin-bottom: 10px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ post0.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ post0.published_date }}</h6>
+                <p class="card-text">{{ post0.text|truncatewords:50}}</p>
+                <a href="{% url 'post_list' %}" class="card-link">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 100%; height: 400px;  margin-bottom: 10px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ post1.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ post1.published_date }}</h6>
+                <p class="card-text">{{ post1.text|truncatewords:50}}</p>
+                <a href="{% url 'post_list' %}" class="card-link">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 100%; height: 400px;  margin-bottom: 10px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ post2.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ post2.published_date }}</h6>
+                <p class="card-text">{{ post2.text|truncatewords:50}}</p>
+                <a href="{% url 'post_list' %}" class="card-link">Blog</a>
 
-  </div>
-</div>
-  </div>
+            </div>
+        </div>
+    </div>
 </div>
 <br/><br/>
 
 <!-- about me -->
-<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3"> About me </h3>
+<h3 style="text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;font-size:35px;" class="display-3">
+    About me </h3>
 <br/>
 <div style="text-align: center">
-<img src="{% static '/blog/me.jpg' %}" alt="me" style="width:200px; height:200px;border-radius: 100px;">
+    <img src="{% static '/blog/me.jpg' %}" alt="me" style="width:200px; height:200px;border-radius: 100px;">
 </div>
 <br/><br/>
 <div class="card" id="aboutcard" style="width: 100%; text-align: center;">
-  <div class="card-body">
+    <div class="card-body">
 
-    <p class="card-text">Hi, I'm Dan <br/> I'm a hobbiest developer and professional computer technician that's passionate
-      about DL/ML models implemented into web applications. I also strongly agree with the views of the free software
-      Foundation and am a devoted Linux user. My programming language of choice is Python but I use C++ when experimenting with both microcontrollers and microprocessors, you can see some of my
-      recent and current robotics projects on the *showcase* section of this site along with some recent Python projects.
-      The blog section consists of both posts keeping up with my learning progress and educational posts about topics that
-      I'm already knowledgeable about. I hope to one day become a professional developer but I am very much doing this for
-      personal satisfaction at the moment rather than for any financial gain. When I'm not working on any projects I like to contribute to the open source community on Github. Thanks for viewing my about me and I hope you enjoy my site.</p>
+        <p class="card-text">Hi, I'm Dan <br/> I'm a hobbiest developer and professional computer technician that's
+            passionate
+            about DL/ML models implemented into web applications. I also strongly agree with the views of the free
+            software
+            Foundation and am a devoted Linux user. My programming language of choice is Python but I use C++ when
+            experimenting with both microcontrollers and microprocessors, you can see some of my
+            recent and current robotics projects on the *showcase* section of this site along with some recent Python
+            projects.
+            The blog section consists of both posts keeping up with my learning progress and educational posts about
+            topics that
+            I'm already knowledgeable about. I hope to one day become a professional developer but I am very much doing
+            this for
+            personal satisfaction at the moment rather than for any financial gain. When I'm not working on any projects
+            I like to contribute to the open source community on Github. Thanks for viewing my about me and I hope you
+            enjoy my site.</p>
 
-  </div>
+    </div>
 </div>
 
 
