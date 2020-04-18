@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,10 +52,10 @@
 
 
 
-<br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Loves Blog</a></h3><br/>
 
-    <div class="container-fluidr" id="mainContainer"   >
+<div class="container-fluidr" id="mainContainer"   >
 
+<img src="{% static '/blog/webbanner.png' %}" style="width: 100%;"/>
 
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
   <ul class="navbar-nav ">
@@ -72,6 +73,7 @@
     -->
   </ul>
 </nav>
+<br/><br/><h3 id="heading" style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Loves Blog</a></h3><br/>
 
 
 

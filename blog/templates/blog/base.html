@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,9 +48,9 @@
     </style>
 </head>
 <body>
-<br/><br/><h3 style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Love Programming</a></h3><br/>
 
-
+<div class="container-fluid" id="mainContainer" >
+<img src="{% static '/blog/webbanner.png' %}" style="width: 100%;"/>
 
 
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
@@ -71,7 +72,10 @@
 
 
 
-    <div class="container-fluid" id="mainContainer" >
+
+        <br/><br/><h3 style="word-wrap: break-word;text-align: center; color: #fff;font-family: 'Baloo Chettan 2', cursive;" class="display-3"><a href="{% url 'home' %}" style="color: #fff; text-decoration: none;">Dan Loves blog</a></h3><br/>
+
+
         <br/>
         <div class="row">
         <div class="dropdown" style="margin-left: 50px;text-align: left;" id="date_filter">
