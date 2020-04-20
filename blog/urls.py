@@ -5,11 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path(r'', views.home, name='home'),
-    path(r'^/post_list$', views.post_list, name='post_list'),
+    path(r'^/about$', views.about, name='about'),
     path(r'^/projects$', views.projects, name='projects'),
-    path(r'^/oldest$', views.oldest, name='oldest'),
-    path(r'^/python$', views.python, name='python'),
-    path(r'^/sqlnosql$', views.sqlnosql, name='sqlnosql'),
-    path(r'^/web$', views.webdevelpment, name='web'),
-    path(r'^/scripting$', views.scripting, name='scripting'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
