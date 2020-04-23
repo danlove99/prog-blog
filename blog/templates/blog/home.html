@@ -7,7 +7,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+
+
+
+
           <div class="site-heading">
+            <div style="text-align: center">
+              <img src="{% static '/blog/me.jpg' %}" alt="me" style="width:200px; height:200px;border-radius: 100px;">
+            </div>
             <h1>Welcome to my blog!</h1>
             <span class="subheading">Please join me on my journey into advanced programming</span>
           </div>
@@ -29,6 +36,10 @@
             </h2>
             <p class="post-subtitle">
               {{ post.text|linebreaksbr }}
+              <!-- {{ post.text|linebreaks|safe|truncatewords:20 }}
+              {% ifnotequal post.text post.text|truncatewords:20 %}
+              <p>read more...</p>
+              {%endifnotequal%}-->
             </p>
           
           <p class="post-meta">Posted 
