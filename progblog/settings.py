@@ -124,4 +124,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = '/home/dan/Django/Django/progblog/projects'
-MEDIA_URL = '/projects/'
+MEDIA_URL = r'^/projects$/'
