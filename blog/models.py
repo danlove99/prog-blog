@@ -3,7 +3,9 @@ from django.db import models
 from django.utils import timezone
 
 class Project(models.Model):
+    title = models.CharField(max_length=50, default='null')
     img = models.ImageField(null=True, blank=True, upload_to="projects/")
+    img_link = models.CharField(max_length=100, default='null')
     description = models.CharField(max_length=300)
     link = models.CharField(max_length=200)
     published_date = models.DateTimeField(blank=True, null=True)
