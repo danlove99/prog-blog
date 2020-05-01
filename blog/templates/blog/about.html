@@ -1,0 +1,46 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{% static '/blog/about-bg.png' %}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">My journey so far</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hi, I'm a hobbiest developer and professional computer technician that's
+            passionate
+            about DL/ML models implemented into web applications. I also strongly agree with the views of the free
+            software
+            Foundation and am a devoted Linux user. </p> 
+            <p>My programming language of choice is Python but I use C++ when
+            experimenting with both microcontrollers and microprocessors, you can see some of my
+            recent and current robotics projects on the *showcase* section of this site along with some recent Python
+            projects.</p>
+            <p>The blog section consists of both posts keeping up with my learning progress and educational posts about
+            topics that
+            I'm already knowledgeable about. I hope to one day become a professional developer but I am very much doing
+            this for
+            personal satisfaction at the moment rather than for any financial gain. When I'm not working on any projects
+            I like to contribute to the open source community on Github. Thanks for viewing my about me and I hope you
+            enjoy my site.</p>
+        <a href="https://github.com/danlove99" > Github</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+{% endblock %}
