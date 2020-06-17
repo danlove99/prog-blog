@@ -7,5 +7,6 @@ urlpatterns = [
     path(r'', views.home, name='home'),
     path(r'^/about$', views.about, name='about'),
     path(r'^/projects$', views.projects, name='projects'),
+    path(r'^/DE$', views.DE, name='DE')
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{% static '/blog/about-bg.png' %}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>My Arch Linux</h1>
+            <span class="subheading">Check out my current Desktop Environment!</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<div class="container" style="text-align:center;">
+<br/><br/>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/wA727um4sZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br/><br/><br/>
+
+{% endblock %}
