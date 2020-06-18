@@ -20,3 +20,7 @@ def about(request):
 @xframe_options_exempt
 def DE(request):
     return render(request, 'blog/DE.html', {})
+
+@xframe_options_exempt
+def tutorials(request):
+    return render(request, 'blog/tutorials.html', {})
